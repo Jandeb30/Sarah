@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>For my Sarah</title>
+</head>
+<body>
+    <div class="indicator">My Sarah💗💟</div>
+    <div class="audio">
+        <audio controls="true" autoplay="true" class="music">
+            <source src="enchanted.mp3" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="letter">
+            <div class="instax-wrapper">
+                <img src="1.jpg" alt="Instax photo1" data-text="charr model HAHAHAHA"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="2.jpg" alt="Instax photo1" data-text="shesh nerd"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="3.jpg" alt="Instax photo1" data-text="cute"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="4.jpg" alt="Instax photo1" data-text="study first"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="5.jpg" alt="Instax photo1" data-text="Get some!"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="6.jpg" alt="Instax photo1" data-text="shy ka gurl"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="7.jpg" alt="Instax photo1" data-text="hayaga jokeeeeee"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="8.jpg" alt="Instax photo1" data-text="cuteeeeeeee"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="9.jpg" alt="Instax photo1" data-text="0.5 ohh HAHAHAHAH"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="10.jpg" alt="Instax photo1" data-text="mura daw kag saag ana ako ate"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="11.jpg" alt="Instax photo1" data-text="spider gurl"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="12.jpg" alt="Instax photo1" data-text="with agawins"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="13.jpg" alt="Instax photo1" data-text="selfie"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="14.jpg" alt="Instax photo1" data-text="charr AHAHAHHA"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="15.jpg" alt="Instax photo1" data-text="wackyyy"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="16.jpg" alt="Instax photo1" data-text="lagi gurl ikaw na"/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="17.jpg" alt="Instax photo1" data-text=""/>
+            </div>
+            <div class="instax-wrapper">
+                <img src="18.jpg" alt="Instax photo1" data-text=""/>
+            </div>
+            <h2>
+                Dear Sarah, 
+
+I couldn't believe that this would turn out well. I couldn't believe I kinda cheated just to entertain you. At first, I thought it was just nothing until, there's something in my heart and mind that really bothers me. Your presence brought me into the light when I was in darkness. Something I couldn't think of someone can give to me. Getting your nails dirty just to have me is a ballsy move. I couldn't believe someone would do that just for me. You are really something. You're brave, smart, and cheerful. You're someone who I think deserves the best kind of love. My love.
+
+            </h2>
+            <script>
+                function sendYesResponse() {
+                        fetch("send-email.php", {  
+                            method: "POST",
+                            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                            body: "message=Yes, I will be your Valentine! 💘"
+                        })
+                        .then(response => response.text())
+                        .then(data => alert(data))
+                        .catch(error => console.error("Error:", error));
+                    }
+            </script>
+            <style>
+            
+                .valenine-box {
+                    background: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                    text-align: center;
+                    width: 300px;
+                }
+            
+                h2 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+            
+                .buttons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                }
+            
+                button {
+                    background: white;
+                    border: 2px solid black;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    font-weight: bold;
+                }
+            
+                button:hover {
+                    background: lightgray;
+                }
+            </style>
+            </head>
+            
+            <body>
+                <div class="valentine-box">
+                    <h2>Will you be my Valentine?</h2>
+                    <div class="buttons">
+                        <button onclick="sendYesResponse()">Yes</button>
+                        <button onclick="alert('Maybe next time!')">No</button>
+                    </div>
+                </div>
+            </body>
+            
+            </html>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Your custom letter text goes here! 💌</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
